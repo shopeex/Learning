@@ -420,3 +420,10 @@ RestartPreventExitStatus=23
 [Install]
 WantedBy=multi-user.target
 END
+
+systemctl enable xray.service
+systemctl start xray.service
+clear
+echo "install completed"
+sleep 3
+reboot
